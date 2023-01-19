@@ -13,4 +13,9 @@ export class UserservicesService {
     const url = this.urlBase
     return this.http.get<string>(url) 
   }
+  urlbaseasincrona = environment.urlASINCRONA
+  getAsincrona(): Observable<string>{
+    const url = this.urlbaseasincrona
+    return this.http.get<string>(url)
+  }
 }
